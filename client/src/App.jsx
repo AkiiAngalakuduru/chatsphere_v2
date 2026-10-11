@@ -1,4 +1,5 @@
 import MessageBubble from "./Components/MessageBubble";
+import MessageInput from "./Components/MessageInput";
 function App(){
   return(
     <div>
@@ -8,6 +9,7 @@ function App(){
       <MessageBubble sender="Akhil" text="whats up" time="10:32"/>
       <MessageBubble sender="Raju" text="kingkong"  time="12:09"/>
       <MessageBubble text="who sent this?" />
+      <MessageInput/>
     </div>
   );
 }
