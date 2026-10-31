@@ -1,13 +1,10 @@
-function MessageBubble({sender="Unknown",text,time="just now"}){
-    return(
-        <div>
-            <b>{sender}</b>
-            <p>{text}</p>
-            <span>{time}</span>
-            
-        </div>
-    );
+function MessageBubble({ text, isMine = false }) {
+  return (
+    <div className={isMine ? 'bubble mine' : 'bubble'}>
+      {text}
+    </div>
+  )
 }
-export default MessageBubble;
 
+export default MessageBubble;
 

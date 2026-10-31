@@ -12,7 +12,7 @@ setText('')
 }
 return (
 
-<form onSubmit={handleSubmit}>
+<form className="input-row" onSubmit={handleSubmit}>
 
 <input
 value={text}
